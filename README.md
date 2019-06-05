@@ -4,7 +4,7 @@
 This application uses the Unsplash api to return photos related to a user search query. The purpose of this project was to learn a new framework (Vue).
 
 ## Installation
-- git clone https://github.com/taylorsperry/deploy-foto.git
+- git clone git@github.com:criteriamor/Photophy.git
 
 - npm install from the root directory
 
