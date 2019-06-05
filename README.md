@@ -3,6 +3,17 @@
 # Photopy
 This application uses the Unsplash api to return photos related to a user search query. The purpose of this project was to learn a new framework (Vue).
 
+## Installation
+- git clone https://github.com/taylorsperry/deploy-foto.git
+
+- npm install from the root directory
+
+- Request an API key from the Unsplash API
+
+- From the root directory add a file named .env and add VUE_APP_APIKEY=your API key here
+
+- npm run serve and visit localhost:8080 in your browser
+
 ## Technology
 - Vue.js
 - Axios
