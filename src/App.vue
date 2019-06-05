@@ -13,7 +13,26 @@ import axios from 'axios';
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header,
+    Photos
+  },
+  data() {
+    return {
+      photos: []
+    }
+  },
+  methods: {
+    searchPhoto(newTodo) {
+      const { title } = newTodo;
+      const url = `https://api.unsplash.com/search/photos?page=1&query=${title}&client_id=` + process.env.VUE_APP_APIKEY
+      
+      axios.get(url, {
+        title
+      })
+        .then(res => this.photos = [...res.data.results])
+        .catch(err => err)
+
+    }
   }
 }
 </script>
